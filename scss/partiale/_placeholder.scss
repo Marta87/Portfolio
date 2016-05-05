@@ -1,0 +1,96 @@
+//Menu
+%hamburger_menu {
+    height: 50px;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+%menu {
+    display: none;
+    float: right;
+    list-style-type: none;
+    font-size: 13px;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+%menu_li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-top: 13px;
+    margin-left: 2px;
+}
+
+%menu_li_a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-peg;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+%menu_sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    background: $backround-color;
+}
+
+%decor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+%about-me-decoration {
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background: $color_decoration;
+}
+
+%diamond {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 12px solid $backround-color;
+    position: relative;
+}
+
+%diamond_after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 11px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 12px solid $backround-color;
+}
+
+%skills_cointener {
+    height: 5px;
+    width: 200px;
+    background: gray;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+@media (min-width: 900px) {
+    %skills_cointener {
+        width: 280px;
+        margin: 30px auto;
+    }
+}
+
+%skills_color {
+    height: 5px;
+    border-radius: 4px;
+}

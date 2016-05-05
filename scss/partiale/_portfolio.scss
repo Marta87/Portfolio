@@ -1,0 +1,169 @@
+.portfolio {
+    min-height: 100vh;
+    height: 1100px;
+    width: auto;
+    background: #fff;
+    .about-my-portfolio {
+        padding-top: 100px;
+        h3 {
+            text-align: center;
+            color: #2a2a2a;
+            font-family: $font-peg;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    .remove {
+        display: none;
+    }
+    .decor {
+        @extend %decor;
+        margin-bottom: 45px;
+    }
+    .add_decor {
+        margin-top: 45px;
+    }
+    .about-me-decoration {
+        @extend %about-me-decoration;
+    }
+    .diamond {
+        @extend %diamond;
+        &:after {
+            @extend %diamond_after;
+        }
+    }
+    .portfolio_content {
+        height: 910px;
+        width: auto;
+        ;
+    }
+    @media(min-width: 500px) {
+        .boxs {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    @media(min-width: 750px) {
+        .boxs {
+            width: 70%;
+        }
+    }
+    @media(min-width: 900px) {
+        .boxs {
+            width: 60%;
+        }
+    }
+    @media(min-width: 1200px) {
+        .boxs {
+            width: 40%;
+        }
+    }
+    .box {
+        margin: 0 auto;
+        height: 200px;
+        width: 70%;
+        text-align: center;
+        .img {
+            height: 170px;
+            width: 90%;
+        }
+        @media(min-width: 1200px) {
+            .img {
+                width: 350px;
+                height: 250px;
+                padding: 10px;
+            }
+        }
+    }
+    @media(min-width: 500px) {
+        .box {
+            width: 50%;
+        }
+    }
+    @media(min-width: 1200px) {
+        .box {
+            height: 270px;
+        }
+    }
+    .modal {
+        height: 380px;
+        width: 70%;
+        margin: 10px auto;
+        padding: 5px 5px;
+        background: #fff;
+        display: none;
+        h3 {
+            text-align: center;
+            color: #2a2a2a;
+            font-family: $font-peg;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        img {
+            height: 10px;
+            width: 10px;
+        }
+        p {
+            font-family: $fony-frontend;
+            margin: 10px 0;
+        }
+        .decor {
+            @extend %decor;
+            margin-top: -4px;
+        }
+        .about-me-decoration {
+            @extend %about-me-decoration;
+        }
+        .diamond {
+            @extend %diamond;
+            &:after {
+                @extend %diamond_after;
+            }
+        }
+        .guzik {
+            margin: 0px auto;
+            height: 30px;
+            width: 100px;
+            background: $backround-color;
+            border-radius: 4px;
+            a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                font-family: $font-peg;
+                font-size: 18px;
+                padding: 5px 5px 0 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media(min-width: 500px) {
+    .portfolio {
+        min-height: 100vh;
+        height: 700px;
+    }
+}
+
+.add {
+    height: 1600px;
+    margin-top: -65px;
+}
+
+@media(min-width: 500px) {
+    .add {
+        height: 1260px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .add {
+        height: 1600px;
+    }
+}

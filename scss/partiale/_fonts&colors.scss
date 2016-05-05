@@ -1,0 +1,18 @@
+$font-main-name: 'Muli', sans-serif;
+$fony-frontend: 'Roboto Mono';
+$font-peg: Raleway, sans-serif;
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('fonts/ElegantIcons.eot');
+	src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ElegantIcons.woff') format('woff'),
+		url('fonts/ElegantIcons.ttf') format('truetype'),
+		url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+//Colors
+$backround-color: #ea5252;
+$color_decoration: #2A2A2A;

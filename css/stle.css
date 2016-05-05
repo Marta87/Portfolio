@@ -1,0 +1,526 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'ElegantIcons';
+  src: url("fonts/ElegantIcons.eot");
+  src: url("fonts/ElegantIcons.eot?#iefix") format("embedded-opentype"), url("fonts/ElegantIcons.woff") format("woff"), url("fonts/ElegantIcons.ttf") format("truetype"), url("fonts/ElegantIcons.svg#ElegantIcons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+nav .hamburger_menu {
+  height: 50px;
+  display: inline-block;
+  margin-left: 3px; }
+
+nav .menu {
+  display: none;
+  float: right;
+  list-style-type: none;
+  font-size: 13px;
+  height: 2em;
+  line-height: 2em;
+  text-align: center; }
+
+nav .menu li, .menu_fixed li {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-top: 13px;
+  margin-left: 2px; }
+
+nav .menu li a, .menu_fixed li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  padding: 0 5px; }
+
+.about_me .navigation .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 50px;
+  width: 100%;
+  margin-left: 0;
+  background: #ea5252; }
+
+.decor, #scills .decor, .portfolio .decor, .portfolio .modal .decor, .kontakty .decor {
+  text-align: center;
+  margin-top: 20px; }
+
+.about-me-decoration, #scills .about-me-decoration, .portfolio .about-me-decoration, .portfolio .modal .about-me-decoration, .kontakty .about-me-decoration {
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  background: #2A2A2A; }
+
+.diamond, #scills .diamond, .portfolio .diamond, .portfolio .modal .diamond, .kontakty .diamond {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 12px solid #ea5252;
+  position: relative; }
+
+.diamond:after, #scills .diamond:after, .portfolio .diamond:after, .portfolio .modal .diamond:after, .kontakty .diamond:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 11px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 12px solid #ea5252; }
+
+#scills .scills_cointener .html, #scills .scills_cointener .css, #scills .scills_cointener .javaScript, #scills .scills_cointener .jQuery, #scills .scills_cointener .rwd, #scills .scills_cointener .sass, #scills .scills_cointener .photoshop, #scills .scills_cointener .indesign, #scills .scills_cointener .git {
+  height: 5px;
+  width: 200px;
+  background: gray;
+  border-radius: 4px;
+  margin: 20px auto; }
+
+@media (min-width: 900px) {
+  #scills .scills_cointener .html, #scills .scills_cointener .css, #scills .scills_cointener .javaScript, #scills .scills_cointener .jQuery, #scills .scills_cointener .rwd, #scills .scills_cointener .sass, #scills .scills_cointener .photoshop, #scills .scills_cointener .indesign, #scills .scills_cointener .git {
+    width: 280px;
+    margin: 30px auto; } }
+#scills .scills_cointener .html .color, #scills .scills_cointener .css .color, #scills .scills_cointener .javaScript .color, #scills .scills_cointener .jQuery .color, #scills .scills_cointener .rwd .color, #scills .scills_cointener .sass .color, #scills .scills_cointener .photoshop .color, #scills .scills_cointener .indesign .color, #scills .scills_cointener .git .color {
+  height: 5px;
+  border-radius: 4px; }
+
+nav {
+  height: 50px;
+  width: auto;
+  position: absolute; }
+  @media (min-width: 500px) {
+    nav .hamburger_menu {
+      display: none; } }
+  nav .name {
+    display: none; }
+  nav .menu li a:hover {
+    border: 1px solid #eb2e2e;
+    border-radius: 4px; }
+  @media (min-width: 500px) {
+    nav .menu {
+      display: inline-block;
+      float: left;
+      margin-left: 40px;
+      padding-top: 10px; } }
+  @media (min-width: 500px) {
+    nav .menu li a {
+      font-size: 20px; } }
+
+header {
+  min-height: 100vh;
+  height: 600px;
+  width: auto;
+  background: #fff;
+  background-image: url(../img/str7.jpg);
+  background-repeat: no-repeat;
+  align: center;
+  text-align: center;
+  font-weight: bold; }
+  header h1 {
+    padding-top: 60px;
+    font-size: 60px;
+    font-family: "Tangerine", cursive;
+    color: #fff; }
+  @media (min-width: 400px) {
+    header h1 {
+      padding-top: 110px;
+      font-size: 65px; } }
+  header .title {
+    font-family: "Roboto Mono";
+    font-size: 18px;
+    margin-top: -50px;
+    padding-top: 50px;
+    color: #fff; }
+  @media (min-width: 400px) {
+    header .title {
+      font-size: 20px; } }
+  header .navi_buttons {
+    margin: 190px auto; }
+    header .navi_buttons p {
+      display: inline-block;
+      height: 40px;
+      width: 150px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      padding-top: 13px;
+      font-size: 15px; }
+      header .navi_buttons p a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        padding: 0 5px;
+        margin-bottom: 10px; }
+    header .navi_buttons .navi_buttons_white {
+      background-color: #fff; }
+      header .navi_buttons .navi_buttons_white a {
+        color: #ea5252; }
+    header .navi_buttons .navi_buttons_color {
+      background-color: #ea5252; }
+      header .navi_buttons .navi_buttons_color a {
+        color: #fff; }
+  @media (min-width: 400px) {
+    header .navi_buttons {
+      margin: 260px auto;
+      padding: 0 20px; } }
+
+@media (min-width: 400px) {
+  header {
+    height: 800px;
+    background-image: url(../img/str9.jpg); } }
+.about_me {
+  height: 950px;
+  width: auto;
+  background: #e9e9e9; }
+  .about_me .navigation {
+    height: 50px;
+    width: auto;
+    background: #ea5252; }
+    @media (min-width: 900px) {
+      .about_me .navigation .sticky {
+        float: right; } }
+  @media (min-width: 400px) {
+    .about_me .navigation {
+      margin-top: -70px; } }
+  @media (min-width: 600px) {
+    .about_me .navigation {
+      text-align: center; } }
+  .about_me .name {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff; }
+    .about_me .name a {
+      text-decoration: none;
+      font-family: Raleway, sans-serif;
+      color: #fff; }
+
+@media (min-width: 400px) {
+  .about_me {
+    height: 800px; } }
+@media (min-width: 1500px) {
+  .about_me {
+    height: 1000px; } }
+.menu_fixed {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  list-style-type: none;
+  font-size: 13px;
+  height: 2em;
+  line-height: 2em;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .menu_fixed li a {
+      font-size: 18px; } }
+  @media (min-width: 1000px) {
+    .menu_fixed li a {
+      padding: 0 20px;
+      font-size: 22px; } }
+  @media (min-width: 600px) {
+    .menu_fixed li {
+      float: none;
+      text-align: center; } }
+
+@media (min-width: 600px) {
+  .menu_fixed {
+    float: none; } }
+.about-me-heading {
+  padding-top: 60px; }
+  .about-me-heading h3 {
+    text-align: center;
+    color: #2a2a2a;
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    font-weight: bold; }
+
+.text_about_me {
+  display: inline-block;
+  text-align: left;
+  line-height: 2em;
+  padding: 30px 30px;
+  font-family: Raleway, sans-serif; }
+
+@media (min-width: 400px) {
+  .text_about_me {
+    padding-top: 60px; } }
+@media (min-width: 600px) {
+  .text_about_me {
+    padding: 60px 80px; } }
+@media (min-width: 700px) {
+  .text_about_me {
+    font-size: 18px; } }
+@media (min-width: 800px) {
+  .text_about_me {
+    padding: 60px 120px; } }
+@media (min-width: 1000px) {
+  .text_about_me {
+    padding: 40px 180px; } }
+@media (min-width: 1500px) {
+  .text_about_me {
+    padding: 70px 470px; } }
+#scills {
+  height: 850px;
+  width: auto;
+  background: #fff; }
+  #scills .about-my-scills {
+    padding-top: 100px; }
+    #scills .about-my-scills h3 {
+      text-align: center;
+      color: #2a2a2a;
+      font-family: Raleway, sans-serif;
+      font-size: 40px;
+      font-weight: bold; }
+  #scills .scills_cointener {
+    margin-top: 50px; }
+    #scills .scills_cointener div {
+      width: 50%;
+      margin: 0 auto; }
+    #scills .scills_cointener p {
+      text-align: center;
+      color: #2a2a2a;
+      font-family: Raleway, sans-serif;
+      font-size: 18px;
+      font-weight: bold; }
+    @media (min-width: 900px) {
+      #scills .scills_cointener p {
+        font-size: 22px; } }
+    #scills .scills_cointener .html .color {
+      width: 90%;
+      background: #ef4566; }
+    #scills .scills_cointener .css .color {
+      width: 80%;
+      background: #F69a9a; }
+    #scills .scills_cointener .javaScript .color {
+      width: 30%;
+      background: #F9cdae; }
+    #scills .scills_cointener .jQuery .color {
+      width: 50%;
+      background: #f16a43; }
+    #scills .scills_cointener .rwd .color {
+      width: 80%;
+      background: #83ae9b; }
+    #scills .scills_cointener .sass .color {
+      width: 65%;
+      background: #e8175d; }
+    #scills .scills_cointener .photoshop .color {
+      width: 40%;
+      background: #c65b7b; }
+    #scills .scills_cointener .indesign .color {
+      width: 65%;
+      background: #f67280; }
+    #scills .scills_cointener .git .color {
+      width: 75%;
+      background: #f7d969; }
+  @media (min-width: 600px) {
+    #scills .scills_cointener {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 90px; } }
+  @media (min-width: 1300px) {
+    #scills .scills_cointener {
+      padding: 0 200px; } }
+
+.portfolio {
+  height: 1100px;
+  width: auto;
+  background: #fff; }
+  .portfolio .about-my-portfolio {
+    padding-top: 100px; }
+    .portfolio .about-my-portfolio h3 {
+      text-align: center;
+      color: #2a2a2a;
+      font-family: Raleway, sans-serif;
+      font-size: 40px;
+      font-weight: bold; }
+  .portfolio .remove {
+    display: none; }
+  .portfolio .decor {
+    margin-bottom: 45px; }
+  .portfolio .add_decor {
+    margin-top: 45px; }
+  .portfolio .portfolio_content {
+    height: 910px;
+    width: auto; }
+  @media (min-width: 550px) {
+    .portfolio .boxs {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap; } }
+  @media (min-width: 750px) {
+    .portfolio .boxs {
+      width: 70%; } }
+  @media (min-width: 900px) {
+    .portfolio .boxs {
+      width: 60%; } }
+  .portfolio .box {
+    margin: 0 auto;
+    height: 200px;
+    width: 70%;
+    text-align: center; }
+    .portfolio .box .img {
+      height: 170px;
+      width: 90%; }
+  @media (min-width: 550px) {
+    .portfolio .box {
+      width: 50%; } }
+  .portfolio .modal {
+    height: 360px;
+    width: 70%;
+    margin: 10px auto;
+    padding: 5px 5px;
+    background: #fff;
+    display: none; }
+    .portfolio .modal h3 {
+      text-align: center;
+      color: #2a2a2a;
+      font-family: Raleway, sans-serif;
+      font-size: 20px;
+      font-weight: bold; }
+    .portfolio .modal img {
+      height: 10px;
+      width: 10px; }
+    .portfolio .modal p {
+      font-family: "Roboto Mono";
+      margin: 10px 0; }
+    .portfolio .modal .decor {
+      margin-top: -4px; }
+    .portfolio .modal .guzik {
+      margin: 0px auto;
+      height: 30px;
+      width: 100px;
+      background: #ea5252;
+      border-radius: 4px; }
+      .portfolio .modal .guzik a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        padding: 5px 5px 0 5px;
+        margin-bottom: 10px; }
+
+.add {
+  height: 1800px;
+  margin-top: -65px; }
+
+.kontakty {
+  height: 614px;
+  width: auto;
+  padding-top: 50px;
+  background-image: url(../img/backround.jpg); }
+  .kontakty .about-contact {
+    margin-top: -140px; }
+    .kontakty .about-contact h3 {
+      text-align: center;
+      color: #2a2a2a;
+      font-family: Raleway, sans-serif;
+      font-size: 40px;
+      font-weight: bold; }
+  .kontakty .big-diamond {
+    margin: 0 auto;
+    margin-top: -15px;
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-bottom: 35px solid #303030;
+    position: relative; }
+    .kontakty .big-diamond:after {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 34px;
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-top: 35px solid white; }
+  .kontakty .dane {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 25px;
+    font-weight: bold; }
+    .kontakty .dane .litter {
+      font-size: 15px;
+      padding: 30px 0; }
+    .kontakty .dane a {
+      text-decoration: none;
+      font-size: 15px;
+      color: white; }
+  .kontakty .about-me-decoration {
+    background: white; }
+  .kontakty .diamond {
+    border-bottom: 12px solid #fff; }
+    .kontakty .diamond:after {
+      border-top: 12px solid #fff; }
+  .kontakty .footer {
+    height: 50px;
+    width: auto;
+    background: #ea5252;
+    text-align: center; }
+    .kontakty .footer p {
+      padding-top: 14px;
+      font-size: 18px;
+      color: white;
+      font-family: Raleway, sans-serif;
+      font-weight: bold; }
+
+/*# sourceMappingURL=stle.css.map */
