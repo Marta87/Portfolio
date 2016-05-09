@@ -1,107 +1,108 @@
-.kontakty {
-  min-height: 100vh;
-  height: 799px;
-  width: auto;
-  background-image: url(../img/backround.jpg);
-  .about-contact {
-    padding-top: 100px;
-    h3 {
-      text-align: center;
-      color: #fff;
-      font-family: $font-peg;
-      font-size: 40px;
-      font-weight: bold;
+.contacts {
+    min-height: 100vh;
+    height: 799px;
+    width: auto;
+    background-image: url(../img/backround.jpg);
+    background-repeat: no-repeat;
+    .about-contact {
+        padding-top: 100px;
+        h3 {
+            text-align: center;
+            color: #fff;
+            font-family: $font-peg;
+            font-size: 40px;
+            font-weight: bold;
+        }
     }
-  }
-  .big-diamond {
-    margin: 0 auto;
-    margin-top: -15px;
-    width: 0;
-    height: 0;
-    border: 30px solid transparent;
-    border-bottom: 35px solid #303030;
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      left: -30px;
-      top: 34px;
-      width: 0;
-      height: 0;
-      border: 30px solid transparent;
-      border-top: 35px solid white;
+    .big-diamond {
+        margin: 0 auto;
+        margin-top: -15px;
+        width: 0;
+        height: 0;
+        border: 30px solid transparent;
+        border-bottom: 35px solid #303030;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 34px;
+            width: 0;
+            height: 0;
+            border: 30px solid transparent;
+            border-top: 35px solid white;
+        }
     }
-  }
-  @media (min-width: 800px) {
-    .flexy_contact {
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 80px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+    @media (min-width: 800px) {
+        .flexy_contact {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
-  }
-  @media (min-width: 1200px) {
-    .flexy_contact {
-      display: block;
+    @media (min-width: 1200px) {
+        .flexy_contact {
+            display: block;
+        }
     }
-  }
-  .dane {
-    margin-top: 60px;
-    text-align: center;
-    color: white;
-    font-family: $font-peg;
-    font-size: 25px;
-    font-weight: bold;
-    .litter {
-      font-size: 15px;
-      padding: 30px 0;
-    }
-    a {
-      text-decoration: none;
-      font-size: 15px;
-      color: white;
-    }
-  }
-  @media (min-width: 1200px) {
     .dane {
-      margin-top: 180px;
-      font-size: 30px;
+        margin-top: 60px;
+        text-align: center;
+        color: white;
+        font-family: $font-peg;
+        font-size: 25px;
+        font-weight: bold;
+        .litter {
+            font-size: 15px;
+            padding: 30px 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
     }
-  }
-  @media (min-width: 800px) {
-    .data_container {
-      width: 49%;
-      display: inline-block;
+    @media (min-width: 1200px) {
+        .dane {
+            margin-top: 180px;
+            font-size: 30px;
+        }
     }
-  }
-  @media (min-width: 1200px) {
-    .data_container {
-      display: inline-block;
-      width: 270px;
+    @media (min-width: 800px) {
+        .data_container {
+            width: 49%;
+            display: inline-block;
+        }
     }
-  }
-  .decor {
-    @extend %decor;
-  }
-  .about-me-decoration {
-    @extend %about-me-decoration;
-    background: white;
-  }
-  .diamond {
-    @extend %diamond;
-    border-bottom: 12px solid #fff;
-    &:after {
-      @extend %diamond_after;
-      border-top: 12px solid #fff;
+    @media (min-width: 1200px) {
+        .data_container {
+            display: inline-block;
+            width: 270px;
+        }
     }
-  }
+    .decor {
+        @extend %decor;
+    }
+    .about-me-decoration {
+        @extend %about-me-decoration;
+        background: white;
+    }
+    .diamond {
+        @extend %diamond;
+        border-bottom: 12px solid #fff;
+        &:after {
+            @extend %diamond_after;
+            border-top: 12px solid #fff;
+        }
+    }
 }
 
 @media (min-width: 800px) {
-  .kontakty {
-    height: auto;
-  }
+    .contacts {
+        height: auto;
+    }
 }

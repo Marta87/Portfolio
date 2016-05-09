@@ -9,20 +9,13 @@ header {
     text-align: center;
     font-weight: bold;
     h1 {
-        padding-top: 133px; //180px;
+        padding-top: 133px;
         font-size: 35px;
         font-family: $font-main-name;
         color: #fff;
         height: 250px;
-        //      padding-top: 400px;
         background: #191628;
     }
-    //  @media (min-width: 400px) {
-    //    h1 {
-    //      padding-top: 60px;
-    //      font-size: 65px;
-    //    }
-    //  }
     @media (min-width: 500px) {
         h1 {
             padding-top: 136px;
@@ -35,41 +28,53 @@ header {
             font-size: 45px;
         }
     }
-    @media (min-width: 1000px) {
+    @media (min-width: 1000px) and (min-height: 600px) {
         h1 {
-            height: 600px;
-            padding-top: 400px;
-            font-size: 80px;
-            background: #191628;
+            height: 400px;
+            padding-top: 270px;
+            font-size: 60px;
         }
     }
-    @media (orientation: portrait) and (min-height: 730px) {
+    @media (min-height: 730px) {
         h1 {
+            height: 500px;
             font-size: 45px;
-            padding-top: 125px;
+            padding-top: 365px;
+        }
+    }
+    @media (min-width: 1000px) and (min-height: 700px) {
+        h1 {
+            height: 500px;
+            padding-top: 360px;
+        }
+    }
+    @media (min-width: 1900px) {
+        h1 {
+            height: 650px;
+            padding-top: 500px;
+            font-size: 80px;
         }
     }
     .title {
         font-family: $fony-frontend;
         font-size: 15px;
         margin-top: -81px;
-        //    padding-top: 50px;
         color: #fff;
     }
-    //  @media (min-width: 400px) {
-    //    .title {
-    //      font-size: 20px;
-    //    }
-    //  }
     @media (min-width: 900px) {
         .title {
             margin-top: -60px;
             font-size: 18px;
         }
     }
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) and (min-height: 600px) {
         .title {
-            margin-top: -115px;
+            margin-top: -70px;
+        }
+    }
+    @media (min-width: 1900px) {
+        .title {
+            font-size: 25px;
         }
     }
     @media (orientation: portrait) and (min-height: 730px) {
@@ -140,6 +145,11 @@ header {
             margin: 180px auto;
         }
     }
+    @media (min-width: 1000px) and (min-height: 600px) {
+        .navi_buttons {
+            margin: 140px auto;
+        }
+    }
     @media (orientation: landscape) and (max-height: 725px) {
         .navi_buttons {
             margin: 150px auto;
@@ -150,14 +160,9 @@ header {
             margin: 250px auto;
         }
     }
-    @media (min-height: 480px) and (max-height: 530px) {
+    @media (min-height: 400px) and (max-height: 530px) {
         .navi_buttons {
             margin: 150px auto;
-        }
-    }
-    @media (max-height: 676px) and (min-width: 677px) {
-        .navi_buttons {
-            margin: 230px auto;
         }
     }
 }
@@ -166,6 +171,12 @@ header {
     header {
         min-height: 100vh;
         height: 800px;
+        background-image: url(../img/medium.jpg);
+    }
+}
+
+@media (min-height: 600px) {
+    header {
         background-image: url(../img/medium.jpg);
     }
 }
@@ -182,11 +193,16 @@ header {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-height: 600px) {
     header {
-        min-height: 100vh;
-        height: 1025px;
-        background-image: url(../img/str11.jpg);
+        height: 800px;
+    }
+}
+
+@media (min-height: 700px) {
+    header {
+        height: 1100px;
+        background-image: url(../img/str12.jpg);
     }
 }
 
@@ -194,5 +210,25 @@ header {
     header {
         min-height: 100vh;
         height: 1025px;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        height: 1025px;
+        background-image: url(../img/str11.jpg);
+    }
+}
+
+@media (min-height: 1000px) {
+    header {
+        background-image: url(../img/str11.jpg);
+        height: 1270px;
+    }
+}
+
+@media (min-height: 1200px) {
+    header {
+        height: 1370px;
     }
 }

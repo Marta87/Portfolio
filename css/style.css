@@ -89,17 +89,17 @@ nav .menu li a, .menu_fixed li a {
   margin-left: 0;
   background: #ea5252; }
 
-.decor, #scills .decor, .portfolio .decor, .portfolio .modal .decor, .kontakty .decor {
+.decor, #scills .decor, .portfolio .decor, .portfolio .modal .decor, .contacts .decor {
   text-align: center;
   margin-top: 20px; }
 
-.about-me-decoration, #scills .about-me-decoration, .portfolio .about-me-decoration, .portfolio .modal .about-me-decoration, .kontakty .about-me-decoration {
+.about-me-decoration, #scills .about-me-decoration, .portfolio .about-me-decoration, .portfolio .modal .about-me-decoration, .contacts .about-me-decoration {
   width: 60px;
   height: 1px;
   display: inline-block;
   background: #2A2A2A; }
 
-.diamond, #scills .diamond, .portfolio .diamond, .portfolio .modal .diamond, .kontakty .diamond {
+.diamond, #scills .diamond, .portfolio .diamond, .portfolio .modal .diamond, .contacts .diamond {
   display: inline-block;
   width: 0;
   height: 0;
@@ -107,7 +107,7 @@ nav .menu li a, .menu_fixed li a {
   border-bottom: 12px solid #ea5252;
   position: relative; }
 
-.diamond:after, #scills .diamond:after, .portfolio .diamond:after, .portfolio .modal .diamond:after, .kontakty .diamond:after {
+.diamond:after, #scills .diamond:after, .portfolio .diamond:after, .portfolio .modal .diamond:after, .contacts .diamond:after {
   content: '';
   position: absolute;
   left: -10px;
@@ -166,10 +166,6 @@ nav {
     nav .menu li a {
       font-size: 22px;
       padding: 0 20px; } }
-  @media (orientation: portrait) and (min-height: 730px) {
-    nav .menu li a {
-      font-size: 20px;
-      padding: 0 15px; } }
 
 header {
   min-height: 100vh;
@@ -196,16 +192,25 @@ header {
     header h1 {
       padding-top: 145px;
       font-size: 45px; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1000px) and (min-height: 600px) {
     header h1 {
-      height: 600px;
-      padding-top: 400px;
-      font-size: 80px;
-      background: #191628; } }
-  @media (orientation: portrait) and (min-height: 730px) {
+      height: 400px;
+      padding-top: 270px;
+      font-size: 60px; } }
+  @media (min-height: 730px) {
     header h1 {
+      height: 500px;
       font-size: 45px;
-      padding-top: 125px; } }
+      padding-top: 365px; } }
+  @media (min-width: 1000px) and (min-height: 700px) {
+    header h1 {
+      height: 500px;
+      padding-top: 360px; } }
+  @media (min-width: 1900px) {
+    header h1 {
+      height: 650px;
+      padding-top: 500px;
+      font-size: 80px; } }
   header .title {
     font-family: "Roboto Mono";
     font-size: 15px;
@@ -215,9 +220,12 @@ header {
     header .title {
       margin-top: -60px;
       font-size: 18px; } }
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) and (min-height: 600px) {
     header .title {
-      margin-top: -115px; } }
+      margin-top: -70px; } }
+  @media (min-width: 1900px) {
+    header .title {
+      font-size: 25px; } }
   @media (orientation: portrait) and (min-height: 730px) {
     header .title {
       font-size: 17px; } }
@@ -268,23 +276,26 @@ header {
   @media (min-width: 900px) {
     header .navi_buttons {
       margin: 180px auto; } }
+  @media (min-width: 1000px) and (min-height: 600px) {
+    header .navi_buttons {
+      margin: 140px auto; } }
   @media (orientation: landscape) and (max-height: 725px) {
     header .navi_buttons {
       margin: 150px auto; } }
   @media (orientation: portrait) and (min-height: 730px) {
     header .navi_buttons {
       margin: 250px auto; } }
-  @media (min-height: 480px) and (max-height: 530px) {
+  @media (min-height: 400px) and (max-height: 530px) {
     header .navi_buttons {
       margin: 150px auto; } }
-  @media (max-height: 676px) and (min-width: 677px) {
-    header .navi_buttons {
-      margin: 230px auto; } }
 
 @media (min-width: 400px) {
   header {
     min-height: 100vh;
     height: 800px;
+    background-image: url(../img/medium.jpg); } }
+@media (min-height: 600px) {
+  header {
     background-image: url(../img/medium.jpg); } }
 @media (min-width: 670px) {
   header {
@@ -292,15 +303,28 @@ header {
 @media (min-width: 670px) {
   header {
     background-image: url(../img/str6.jpg); } }
-@media (min-width: 1000px) {
+@media (min-height: 600px) {
   header {
-    min-height: 100vh;
-    height: 1025px;
-    background-image: url(../img/str11.jpg); } }
+    height: 800px; } }
+@media (min-height: 700px) {
+  header {
+    height: 1100px;
+    background-image: url(../img/str12.jpg); } }
 @media (orientation: portrait) and (min-height: 730px) {
   header {
     min-height: 100vh;
     height: 1025px; } }
+@media (min-width: 1000px) {
+  header {
+    height: 1025px;
+    background-image: url(../img/str11.jpg); } }
+@media (min-height: 1000px) {
+  header {
+    background-image: url(../img/str11.jpg);
+    height: 1270px; } }
+@media (min-height: 1200px) {
+  header {
+    height: 1370px; } }
 .about_me {
   height: 950px;
   width: auto;
@@ -344,7 +368,6 @@ header {
 .menu_fixed {
   display: inline-block;
   float: left;
-  margin-left: 5px;
   list-style-type: none;
   font-size: 13px;
   height: 2em;
@@ -488,6 +511,12 @@ header {
     #scills .scills_cointener {
       padding: 0 200px; } }
 
+@media (min-height: 1000px) {
+  #scills {
+    height: 990px; } }
+@media (min-height: 1199px) {
+  #scills {
+    height: 1100px; } }
 .portfolio {
   min-height: 100vh;
   height: 1100px;
@@ -524,9 +553,9 @@ header {
   @media (min-width: 900px) {
     .portfolio .boxs {
       width: 60%; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .portfolio .boxs {
-      width: 40%; } }
+      width: 45%; } }
   .portfolio .box {
     margin: 0 auto;
     height: 200px;
@@ -534,12 +563,30 @@ header {
     text-align: center; }
     .portfolio .box .img {
       height: 170px;
-      width: 90%; }
+      width: 80%; }
     @media (min-width: 1200px) {
       .portfolio .box .img {
         width: 350px;
         height: 250px;
         padding: 10px; } }
+    .portfolio .box .more {
+      display: block;
+      margin-top: -40px;
+      font-family: Raleway, sans-serif;
+      font-weight: bold; }
+      .portfolio .box .more p {
+        height: 30px;
+        background-color: #ea5252;
+        border: none;
+        color: #fff;
+        padding: 9px 32px;
+        text-align: center;
+        border-radius: 8px;
+        display: inline-block;
+        font-size: 15px; }
+    @media (min-width: 1200px) {
+      .portfolio .box .more {
+        margin-top: -55px; } }
   @media (min-width: 500px) {
     .portfolio .box {
       width: 50%; } }
@@ -582,6 +629,9 @@ header {
         font-size: 18px;
         padding: 5px 5px 0 5px;
         margin-bottom: 10px; }
+  @media (min-height: 400px) {
+    .portfolio .modal {
+      height: 430px; } }
 
 @media (min-width: 500px) {
   .portfolio {
@@ -597,20 +647,21 @@ header {
 @media (min-width: 1200px) {
   .add {
     height: 1600px; } }
-.kontakty {
+.contacts {
   min-height: 100vh;
   height: 799px;
   width: auto;
-  background-image: url(../img/backround.jpg); }
-  .kontakty .about-contact {
+  background-image: url(../img/backround.jpg);
+  background-repeat: no-repeat; }
+  .contacts .about-contact {
     padding-top: 100px; }
-    .kontakty .about-contact h3 {
+    .contacts .about-contact h3 {
       text-align: center;
       color: #fff;
       font-family: Raleway, sans-serif;
       font-size: 40px;
       font-weight: bold; }
-  .kontakty .big-diamond {
+  .contacts .big-diamond {
     margin: 0 auto;
     margin-top: -15px;
     width: 0;
@@ -618,7 +669,7 @@ header {
     border: 30px solid transparent;
     border-bottom: 35px solid #303030;
     position: relative; }
-    .kontakty .big-diamond:after {
+    .contacts .big-diamond:after {
       content: '';
       position: absolute;
       left: -30px;
@@ -628,7 +679,7 @@ header {
       border: 30px solid transparent;
       border-top: 35px solid white; }
   @media (min-width: 800px) {
-    .kontakty .flexy_contact {
+    .contacts .flexy_contact {
       width: 100%;
       margin: 0 auto;
       margin-bottom: 80px;
@@ -637,43 +688,43 @@ header {
       flex-wrap: wrap;
       justify-content: center; } }
   @media (min-width: 1200px) {
-    .kontakty .flexy_contact {
+    .contacts .flexy_contact {
       display: block; } }
-  .kontakty .dane {
+  .contacts .dane {
     margin-top: 60px;
     text-align: center;
     color: white;
     font-family: Raleway, sans-serif;
     font-size: 25px;
     font-weight: bold; }
-    .kontakty .dane .litter {
+    .contacts .dane .litter {
       font-size: 15px;
       padding: 30px 0; }
-    .kontakty .dane a {
+    .contacts .dane a {
       text-decoration: none;
       font-size: 15px;
       color: white; }
   @media (min-width: 1200px) {
-    .kontakty .dane {
+    .contacts .dane {
       margin-top: 180px;
       font-size: 30px; } }
   @media (min-width: 800px) {
-    .kontakty .data_container {
+    .contacts .data_container {
       width: 49%;
       display: inline-block; } }
   @media (min-width: 1200px) {
-    .kontakty .data_container {
+    .contacts .data_container {
       display: inline-block;
       width: 270px; } }
-  .kontakty .about-me-decoration {
+  .contacts .about-me-decoration {
     background: white; }
-  .kontakty .diamond {
+  .contacts .diamond {
     border-bottom: 12px solid #fff; }
-    .kontakty .diamond:after {
+    .contacts .diamond:after {
       border-top: 12px solid #fff; }
 
 @media (min-width: 800px) {
-  .kontakty {
+  .contacts {
     height: auto; } }
 .footer {
   height: 50px;

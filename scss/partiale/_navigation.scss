@@ -1,68 +1,62 @@
 nav {
-  height: 50px;
-  width: auto;
-  position: absolute;
-  .hamburger_menu {
-    @extend %hamburger_menu;
-  }
-  @media (min-width: 500px) {
+    height: 50px;
+    width: auto;
+    position: absolute;
     .hamburger_menu {
-      display: none;
+        @extend %hamburger_menu;
     }
-  }
-  .name {
-    display: none;
-  }
-  .menu {
-    @extend %menu;
-    li {
-      @extend %menu_li;
-      a {
-        @extend %menu_li_a;
-        &:hover {
-          border: 1px solid #eb2e2e;
-          border-radius: 4px;
+    @media (min-width: 500px) {
+        .hamburger_menu {
+            display: none;
         }
-      }
     }
-    .contact_remove {
-      display: none;
+    .name {
+        display: none;
     }
-    @media (min-width: 360px) {
-      .contact_remove {
-        display: inline-block;
-      }
-    }
-  }
-  @media (min-width: 500px) {
     .menu {
-      display: inline-block;
-      margin: 0 auto;
-      margin-left: 40px;
-      padding-top: 25px;
+        @extend %menu;
+        li {
+            @extend %menu_li;
+            a {
+                @extend %menu_li_a;
+                &:hover {
+                    border: 1px solid #eb2e2e;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .contact_remove {
+            display: none;
+        }
+        @media (min-width: 360px) {
+            .contact_remove {
+                display: inline-block;
+            }
+        }
     }
-  }
-  @media (min-width: 500px) {
-    .menu li a {
-      font-size: 20px;
+    @media (min-width: 500px) {
+        .menu {
+            display: inline-block;
+            margin: 0 auto;
+            margin-left: 40px;
+            padding-top: 25px;
+        }
     }
-  }
-  @media (min-width: 1000px) {
-    .menu li a {
-      font-size: 25px;
-      padding: 0 15px;
+    @media (min-width: 500px) {
+        .menu li a {
+            font-size: 20px;
+        }
     }
-  }
-  @media (min-width: 1200px) {
-    .menu li a {
-      font-size: 22px;
-      padding: 0 20px;
+    @media (min-width: 1000px) {
+        .menu li a {
+            font-size: 25px;
+            padding: 0 15px;
+        }
     }
-  }
-  @media (orientation: portrait) and (min-height: 730px) {
-    .menu li a {
-      font-size: 20px;
-      padding: 0 15px;
+    @media (min-width: 1200px) {
+        .menu li a {
+            font-size: 22px;
+            padding: 0 20px;
+        }
     }
-  }
 }
