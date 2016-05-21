@@ -62,6 +62,31 @@
             width: 45%;
         }
     }
+    @media(min-width: 1200px) {
+        .boxs {
+            width: 70%;
+        }
+    }
+    @media(min-width: 1300px) {
+        .boxs {
+            width: 60%;
+        }
+    }
+    @media(min-width: 1500px) {
+        .boxs {
+            width: 50%;
+        }
+    }
+    @media(min-width: 1600px) {
+        .boxs {
+            width: 50%;
+        }
+    }
+    @media(min-width: 1800px) {
+        .boxs {
+            width: 40%;
+        }
+    }
     .box {
         margin: 0 auto;
         height: 200px;
@@ -74,7 +99,7 @@
         @media(min-width: 1200px) {
             .img {
                 width: 350px;
-                height: 250px;
+                height: 240px;
                 padding: 10px;
             }
         }
@@ -85,6 +110,7 @@
             font-weight: bold;
             p {
                 height: 30px;
+                cursor: pointer;
                 background-color: $backround-color;
                 border: none;
                 color: #fff;
@@ -93,6 +119,9 @@
                 border-radius: 8px;
                 display: inline-block;
                 font-size: 15px;
+                &:hover {
+                    background-color: #838194;
+                }
             }
         }
         @media(min-width: 1200px) {
@@ -108,7 +137,12 @@
     }
     @media(min-width: 1200px) {
         .box {
-            height: 270px;
+            height: 230px;
+        }
+    }
+     @media(min-width: 1200px) {
+        .box {
+            height: 260px;
         }
     }
     .modal {
@@ -131,7 +165,7 @@
         }
         p {
             font-family: $fony-frontend;
-            margin: 10px 0;
+            margin: 8px 0; //10px 0 
         }
         .decor {
             @extend %decor;
@@ -146,27 +180,35 @@
                 @extend %diamond_after;
             }
         }
+        .buttons {
+            text-align: center;
+        }
         .guzik {
             margin: 0px auto;
             height: 30px;
             width: 100px;
             background: $backround-color;
             border-radius: 4px;
+            display: inline-block;
+            text-align: center;
             a {
                 display: block;
                 color: #fff;
                 text-decoration: none;
                 text-align: center;
                 font-family: $font-peg;
-                font-size: 18px;
-                padding: 5px 5px 0 5px;
-                margin-bottom: 10px;
+                font-size: 17px;
+                padding-bottom: 2px;
+                //margin-bottom: 10px;
+            }
+            &:hover{
+                background: #838194;
             }
         }
     }
     @media (min-height: 400px) {
         .modal {
-            height: 430px;
+            height: 380px; //430px;
         }
     }
 }
@@ -191,6 +233,6 @@
 
 @media(min-width: 1200px) {
     .add {
-        height: 1600px;
+        height: 1530px; //1600px;
     }
 }

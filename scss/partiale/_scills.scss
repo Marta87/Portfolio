@@ -1,8 +1,8 @@
-#scills {
+#skills {
     height: 850px;
     width: auto;
     background: #fff;
-    .about-my-scills {
+    .about-my-skills {
         padding-top: 100px;
         h3 {
             text-align: center;
@@ -24,7 +24,7 @@
             @extend %diamond_after;
         }
     }
-    .scills_cointener {
+    .skills_cointener {
         margin-top: 50px;
         div {
             width: 50%;
@@ -117,7 +117,7 @@
         }
     }
     @media (min-width: 600px) {
-        .scills_cointener {
+        .skills_cointener {
             width: 80%;
             margin: 0 auto;
             display: flex;
@@ -128,20 +128,20 @@
         }
     }
     @media (min-width: 1300px) {
-        .scills_cointener {
+        .skills_cointener {
             padding: 0 200px;
         }
     }
 }
 
 @media (min-height: 1000px) {
-    #scills {
+    #skills {
         height: 990px;
     }
 }
 
 @media (min-height: 1199px) {
-    #scills {
+    #skills {
         height: 1100px;
     }
 }

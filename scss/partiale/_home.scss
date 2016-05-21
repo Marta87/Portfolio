@@ -1,15 +1,15 @@
 header {
     min-height: 100vh;
     height: 600px;
+    overflow: hidden;
     width: auto;
     background: #fff;
-    background-image: url(../img/small.jpg);
+    background-image: url(../img/medium.jpg);
     background-repeat: no-repeat;
-    align: center;
     text-align: center;
     font-weight: bold;
-    h1 {
-        padding-top: 133px;
+    .head {
+        padding-top: 130px;
         font-size: 35px;
         font-family: $font-main-name;
         color: #fff;
@@ -17,44 +17,83 @@ header {
         background: #191628;
     }
     @media (min-width: 500px) {
-        h1 {
-            padding-top: 136px;
+        .head {
+            //padding-top: 136px;
             font-size: 37px;
         }
     }
     @media (min-width: 900px) {
-        h1 {
-            padding-top: 145px;
+        .head {
+            //padding-top: 145px;
             font-size: 45px;
         }
     }
     @media (min-width: 1000px) and (min-height: 600px) {
-        h1 {
+        .head {
             height: 400px;
-            padding-top: 270px;
-            font-size: 60px;
+            padding-top: 30px;
+            font-size: 50px;
         }
     }
-    @media (min-height: 730px) {
-        h1 {
-            height: 500px;
-            font-size: 45px;
-            padding-top: 365px;
+    //    @media (min-height: 730px) {
+    //        .head {
+    //            height: 500px;
+    //            font-size: 45px;
+    //           // padding-top: 365px;
+    //        }
+    //    }
+    @media (min-width: 1000px),
+    (min-height: 700px) {
+        .head {
+            height: 450px;
+            //padding-top: 85px;
         }
     }
-    @media (min-width: 1000px) and (min-height: 700px) {
-        h1 {
-            height: 500px;
-            padding-top: 360px;
+    @media (min-height: 900px) {
+        .head {
+            height: 600px;
+            padding-top: 175px;
         }
     }
     @media (min-width: 1900px) {
-        h1 {
+        .head {
             height: 650px;
-            padding-top: 500px;
-            font-size: 80px;
+            padding-top: 165px;
+            font-size: 70px;
         }
     }
+    @media (min-height: 1200px) {
+        .head {
+            height: 800px;
+            padding-top: 320px;
+        }
+    }
+    .me {
+        display: none;
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-image: url(../img/my_photo_small.jpg);
+        background-repeat: no-repeat;
+        border: 1px solid #191628;
+        border-radius: 50%;
+    }
+    @media (min-width: 1000px),
+    (min-height: 1000px) {
+        .me {
+            display: block;
+        }
+    }
+    //     @media (min-width: 1200px) {
+    //        .me {
+    //             width: 300px;
+    //    height: 300px;
+    //        }
+    //    }
+    //    .name{
+    //        padding
+    //    }
     .title {
         font-family: $fony-frontend;
         font-size: 15px;
@@ -69,12 +108,13 @@ header {
     }
     @media (min-width: 1000px) and (min-height: 600px) {
         .title {
-            margin-top: -70px;
+            margin-top: -65px;
         }
     }
     @media (min-width: 1900px) {
         .title {
             font-size: 25px;
+            margin-top: -100px;
         }
     }
     @media (orientation: portrait) and (min-height: 730px) {
@@ -126,11 +166,23 @@ header {
             a {
                 color: $backround-color;
             }
+            &:hover {
+                background-color: #838194;
+                a {
+                    color: #fff;
+                }
+            }
         }
         .navi_buttons_color {
             background-color: $backround-color;
             a {
                 color: #fff;
+            }
+            &:hover {
+                background-color: #838194;
+                a {
+                    color: #fff;
+                }
             }
         }
     }
@@ -147,14 +199,19 @@ header {
     }
     @media (min-width: 1000px) and (min-height: 600px) {
         .navi_buttons {
+            margin: 90px auto;
+        }
+    }
+     @media (min-width: 1000px) and (min-height: 800px) {
+        .navi_buttons {
             margin: 140px auto;
         }
     }
-    @media (orientation: landscape) and (max-height: 725px) {
-        .navi_buttons {
-            margin: 150px auto;
-        }
-    }
+//    @media (orientation: landscape) and (max-height: 725px) {
+//        .navi_buttons {
+//            margin: 150px auto;
+//        }
+//    }
     @media (orientation: portrait) and (min-height: 730px) {
         .navi_buttons {
             margin: 250px auto;
@@ -167,45 +224,40 @@ header {
     }
 }
 
-@media (min-width: 400px) {
-    header {
-        min-height: 100vh;
-        height: 800px;
-        background-image: url(../img/medium.jpg);
-    }
-}
-
-@media (min-height: 600px) {
+@media (min-width: 400px),
+(min-height: 600px) {
     header {
         background-image: url(../img/medium.jpg);
     }
 }
 
-@media (min-width: 670px) {
+//@media (min-height: 600px) {
+//    header {
+//        background-image: url(../img/medium1.jpg);
+//    }
+//}
+@media (min-width: 600px) {
     header {
-        background-image: url(../img/medium1.jpg);
+        background-image: url(../img/str13.jpg);
     }
 }
 
-@media (min-width: 670px) {
-    header {
-        background-image: url(../img/str6.jpg);
-    }
-}
-
-@media (min-height: 600px) {
-    header {
-        height: 800px;
-    }
-}
-
-@media (min-height: 700px) {
-    header {
-        height: 1100px;
-        background-image: url(../img/str12.jpg);
-    }
-}
-
+//@media (min-width: 670px) {
+//    header {
+//        background-image: url(../img/str6.jpg);
+//    }
+//}
+//@media (min-height: 600px) {
+//    header {
+//        height: 800px;
+//    }
+//}
+//@media (min-height: 700px) {
+//    header {
+//        height: 1100px;
+//        background-image: url(../img/str12.jpg);
+//    }
+//}
 @media (orientation: portrait) and (min-height: 730px) {
     header {
         min-height: 100vh;
@@ -213,22 +265,47 @@ header {
     }
 }
 
+@media (min-height: 800px) {
+    header {
+        height: 830px;
+    }
+}
+
+@media (min-height: 900px) {
+    header {
+        height: 930px;
+    }
+}
+
 @media (min-width: 1000px) {
     header {
-        height: 1025px;
-        background-image: url(../img/str11.jpg);
+        //height: 800px;
+        background-image: url(../img/str14.jpg);
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        //height: 800px;
+        background-image: url(../img/str15.jpg);
+    }
+}
+
+@media (min-width: 1500px) {
+    header {
+        background-image: url(../img/str16.jpg);
     }
 }
 
 @media (min-height: 1000px) {
     header {
         background-image: url(../img/str11.jpg);
-        height: 1270px;
+        height: 1100px;
     }
 }
 
 @media (min-height: 1200px) {
     header {
-        height: 1370px;
+        height: 1210px;
     }
 }

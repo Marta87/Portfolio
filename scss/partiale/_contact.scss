@@ -2,8 +2,9 @@
     min-height: 100vh;
     height: 799px;
     width: auto;
-    background-image: url(../img/backround.jpg);
+    background-image: url(../img/backround800.jpg);
     background-repeat: no-repeat;
+    overflow: hidden;
     .about-contact {
         padding-top: 100px;
         h3 {
@@ -104,5 +105,12 @@
 @media (min-width: 800px) {
     .contacts {
         height: auto;
+        background-image: url(../img/backround1200.jpg);
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacts {
+        background-image: url(../img/backround1920.jpg);
     }
 }

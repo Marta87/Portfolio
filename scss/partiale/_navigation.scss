@@ -1,9 +1,12 @@
-nav {
+#nav {
     height: 50px;
     width: auto;
-    position: absolute;
+    background-color: #191628;
     .hamburger_menu {
         @extend %hamburger_menu;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
     @media (min-width: 500px) {
         .hamburger_menu {
@@ -15,14 +18,16 @@ nav {
     }
     .menu {
         @extend %menu;
+        @extend %menu_sticky;
+        background-color: #191628;
         li {
             @extend %menu_li;
+            &:hover {
+                border: 1px solid #eb2e2e;
+                border-radius: 4px;
+            }
             a {
                 @extend %menu_li_a;
-                &:hover {
-                    border: 1px solid #eb2e2e;
-                    border-radius: 4px;
-                }
             }
         }
         .contact_remove {
@@ -34,29 +39,55 @@ nav {
             }
         }
     }
+    //    @media (min-width: 500px) {
+    //        .menu {
+    //            display: inline-block;
+    //            margin: 0 auto;
+    //            margin-left: 40px;
+    //            padding-top: 25px;
+    //        }
+    //    }
+    //    @media (min-width: 500px) {
+    //        .menu li a {
+    //            font-size: 20px;
+    //        }
+    //    }
     @media (min-width: 500px) {
         .menu {
+            display: none;
+        }
+    }
+    .socila_media_menu {
+        display: none;
+        float: right;
+        margin-right: 35px;
+        margin-top: 10px;
+        li {
             display: inline-block;
-            margin: 0 auto;
-            margin-left: 40px;
-            padding-top: 25px;
+            padding: 0 5px;
+            img {
+                width: 40px;
+                height: 35px;
+            }
         }
     }
-    @media (min-width: 500px) {
-        .menu li a {
-            font-size: 20px;
-        }
-    }
-    @media (min-width: 1000px) {
-        .menu li a {
-            font-size: 25px;
-            padding: 0 15px;
-        }
-    }
-    @media (min-width: 1200px) {
-        .menu li a {
-            font-size: 22px;
-            padding: 0 20px;
+    @media (min-width: 1000px),
+    (min-height: 1000px) {
+        .socila_media_menu {
+            display: block;
         }
     }
 }
+
+//    @media (min-width: 1000px) {
+//        .menu li a {
+//            font-size: 25px;
+//            padding: 0 15px;
+//        }
+//    }
+//    @media (min-width: 1200px) {
+//        .menu li a {
+//            font-size: 22px;
+//            padding: 0 20px;
+//        }
+//    }

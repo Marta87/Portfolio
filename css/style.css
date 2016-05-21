@@ -50,28 +50,26 @@ table {
   src: url("fonts/ElegantIcons.eot?#iefix") format("embedded-opentype"), url("fonts/ElegantIcons.woff") format("woff"), url("fonts/ElegantIcons.ttf") format("truetype"), url("fonts/ElegantIcons.svg#ElegantIcons") format("svg");
   font-weight: normal;
   font-style: normal; }
-nav .hamburger_menu {
+#nav .hamburger_menu {
   height: 50px;
   display: inline-block;
   margin-left: 3px; }
 
-nav .menu {
+#nav .menu {
   display: none;
-  float: right;
   list-style-type: none;
   font-size: 13px;
   height: 2em;
   line-height: 2em;
   text-align: center; }
 
-nav .menu li, .menu_fixed li {
+#nav .menu li, .menu_fixed li {
   display: inline-block;
   position: relative;
-  float: left;
   margin-top: 13px;
   margin-left: 2px; }
 
-nav .menu li a, .menu_fixed li a {
+#nav .menu li a, .menu_fixed li a {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -79,7 +77,7 @@ nav .menu li a, .menu_fixed li a {
   font-size: 15px;
   padding: 0 5px; }
 
-.about_me .navigation .sticky {
+#nav .menu, .about_me .navigation .sticky {
   position: fixed;
   top: 0;
   left: 0;
@@ -89,17 +87,17 @@ nav .menu li a, .menu_fixed li a {
   margin-left: 0;
   background: #ea5252; }
 
-.decor, #scills .decor, .portfolio .decor, .portfolio .modal .decor, .contacts .decor {
+.decor, #skills .decor, .portfolio .decor, .portfolio .modal .decor, .contacts .decor {
   text-align: center;
   margin-top: 20px; }
 
-.about-me-decoration, #scills .about-me-decoration, .portfolio .about-me-decoration, .portfolio .modal .about-me-decoration, .contacts .about-me-decoration {
+.about-me-decoration, #skills .about-me-decoration, .portfolio .about-me-decoration, .portfolio .modal .about-me-decoration, .contacts .about-me-decoration {
   width: 60px;
   height: 1px;
   display: inline-block;
   background: #2A2A2A; }
 
-.diamond, #scills .diamond, .portfolio .diamond, .portfolio .modal .diamond, .contacts .diamond {
+.diamond, #skills .diamond, .portfolio .diamond, .portfolio .modal .diamond, .contacts .diamond {
   display: inline-block;
   width: 0;
   height: 0;
@@ -107,7 +105,7 @@ nav .menu li a, .menu_fixed li a {
   border-bottom: 12px solid #ea5252;
   position: relative; }
 
-.diamond:after, #scills .diamond:after, .portfolio .diamond:after, .portfolio .modal .diamond:after, .contacts .diamond:after {
+.diamond:after, #skills .diamond:after, .portfolio .diamond:after, .portfolio .modal .diamond:after, .contacts .diamond:after {
   content: '';
   position: absolute;
   left: -10px;
@@ -117,7 +115,7 @@ nav .menu li a, .menu_fixed li a {
   border: 10px solid transparent;
   border-top: 12px solid #ea5252; }
 
-#scills .scills_cointener .html, #scills .scills_cointener .css, #scills .scills_cointener .javaScript, #scills .scills_cointener .jQuery, #scills .scills_cointener .rwd, #scills .scills_cointener .sass, #scills .scills_cointener .photoshop, #scills .scills_cointener .indesign, #scills .scills_cointener .git {
+#skills .skills_cointener .html, #skills .skills_cointener .css, #skills .skills_cointener .javaScript, #skills .skills_cointener .jQuery, #skills .skills_cointener .rwd, #skills .skills_cointener .sass, #skills .skills_cointener .photoshop, #skills .skills_cointener .indesign, #skills .skills_cointener .git {
   height: 5px;
   width: 200px;
   background: gray;
@@ -125,92 +123,111 @@ nav .menu li a, .menu_fixed li a {
   margin: 20px auto; }
 
 @media (min-width: 900px) {
-  #scills .scills_cointener .html, #scills .scills_cointener .css, #scills .scills_cointener .javaScript, #scills .scills_cointener .jQuery, #scills .scills_cointener .rwd, #scills .scills_cointener .sass, #scills .scills_cointener .photoshop, #scills .scills_cointener .indesign, #scills .scills_cointener .git {
+  #skills .skills_cointener .html, #skills .skills_cointener .css, #skills .skills_cointener .javaScript, #skills .skills_cointener .jQuery, #skills .skills_cointener .rwd, #skills .skills_cointener .sass, #skills .skills_cointener .photoshop, #skills .skills_cointener .indesign, #skills .skills_cointener .git {
     width: 280px;
     margin: 30px auto; } }
-#scills .scills_cointener .html .color, #scills .scills_cointener .css .color, #scills .scills_cointener .javaScript .color, #scills .scills_cointener .jQuery .color, #scills .scills_cointener .rwd .color, #scills .scills_cointener .sass .color, #scills .scills_cointener .photoshop .color, #scills .scills_cointener .indesign .color, #scills .scills_cointener .git .color {
+#skills .skills_cointener .html .color, #skills .skills_cointener .css .color, #skills .skills_cointener .javaScript .color, #skills .skills_cointener .jQuery .color, #skills .skills_cointener .rwd .color, #skills .skills_cointener .sass .color, #skills .skills_cointener .photoshop .color, #skills .skills_cointener .indesign .color, #skills .skills_cointener .git .color {
   height: 5px;
   border-radius: 4px; }
 
-nav {
+#nav {
   height: 50px;
   width: auto;
-  position: absolute; }
+  background-color: #191628; }
+  #nav .hamburger_menu {
+    position: fixed;
+    top: 0;
+    left: 0; }
   @media (min-width: 500px) {
-    nav .hamburger_menu {
+    #nav .hamburger_menu {
       display: none; } }
-  nav .name {
+  #nav .name {
     display: none; }
-  nav .menu li a:hover {
-    border: 1px solid #eb2e2e;
-    border-radius: 4px; }
-  nav .menu .contact_remove {
-    display: none; }
-  @media (min-width: 360px) {
-    nav .menu .contact_remove {
-      display: inline-block; } }
+  #nav .menu {
+    background-color: #191628; }
+    #nav .menu li:hover {
+      border: 1px solid #eb2e2e;
+      border-radius: 4px; }
+    #nav .menu .contact_remove {
+      display: none; }
+    @media (min-width: 360px) {
+      #nav .menu .contact_remove {
+        display: inline-block; } }
   @media (min-width: 500px) {
-    nav .menu {
+    #nav .menu {
+      display: none; } }
+  #nav .socila_media_menu {
+    display: none;
+    float: right;
+    margin-right: 35px;
+    margin-top: 10px; }
+    #nav .socila_media_menu li {
       display: inline-block;
-      margin: 0 auto;
-      margin-left: 40px;
-      padding-top: 25px; } }
-  @media (min-width: 500px) {
-    nav .menu li a {
-      font-size: 20px; } }
-  @media (min-width: 1000px) {
-    nav .menu li a {
-      font-size: 25px;
-      padding: 0 15px; } }
-  @media (min-width: 1200px) {
-    nav .menu li a {
-      font-size: 22px;
-      padding: 0 20px; } }
+      padding: 0 5px; }
+      #nav .socila_media_menu li img {
+        width: 40px;
+        height: 35px; }
+  @media (min-width: 1000px), (min-height: 1000px) {
+    #nav .socila_media_menu {
+      display: block; } }
 
 header {
   min-height: 100vh;
   height: 600px;
+  overflow: hidden;
   width: auto;
   background: #fff;
-  background-image: url(../img/small.jpg);
+  background-image: url(../img/medium.jpg);
   background-repeat: no-repeat;
-  align: center;
   text-align: center;
   font-weight: bold; }
-  header h1 {
-    padding-top: 133px;
+  header .head {
+    padding-top: 130px;
     font-size: 35px;
     font-family: "Muli", sans-serif;
     color: #fff;
     height: 250px;
     background: #191628; }
   @media (min-width: 500px) {
-    header h1 {
-      padding-top: 136px;
+    header .head {
       font-size: 37px; } }
   @media (min-width: 900px) {
-    header h1 {
-      padding-top: 145px;
+    header .head {
       font-size: 45px; } }
   @media (min-width: 1000px) and (min-height: 600px) {
-    header h1 {
+    header .head {
       height: 400px;
-      padding-top: 270px;
-      font-size: 60px; } }
-  @media (min-height: 730px) {
-    header h1 {
-      height: 500px;
-      font-size: 45px;
-      padding-top: 365px; } }
-  @media (min-width: 1000px) and (min-height: 700px) {
-    header h1 {
-      height: 500px;
-      padding-top: 360px; } }
+      padding-top: 30px;
+      font-size: 50px; } }
+  @media (min-width: 1000px), (min-height: 700px) {
+    header .head {
+      height: 450px; } }
+  @media (min-height: 900px) {
+    header .head {
+      height: 600px;
+      padding-top: 175px; } }
   @media (min-width: 1900px) {
-    header h1 {
+    header .head {
       height: 650px;
-      padding-top: 500px;
-      font-size: 80px; } }
+      padding-top: 165px;
+      font-size: 70px; } }
+  @media (min-height: 1200px) {
+    header .head {
+      height: 800px;
+      padding-top: 320px; } }
+  header .me {
+    display: none;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../img/my_photo_small.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid #191628;
+    border-radius: 50%; }
+  @media (min-width: 1000px), (min-height: 1000px) {
+    header .me {
+      display: block; } }
   header .title {
     font-family: "Roboto Mono";
     font-size: 15px;
@@ -222,10 +239,11 @@ header {
       font-size: 18px; } }
   @media (min-width: 1000px) and (min-height: 600px) {
     header .title {
-      margin-top: -70px; } }
+      margin-top: -65px; } }
   @media (min-width: 1900px) {
     header .title {
-      font-size: 25px; } }
+      font-size: 25px;
+      margin-top: -100px; } }
   @media (orientation: portrait) and (min-height: 730px) {
     header .title {
       font-size: 17px; } }
@@ -265,10 +283,18 @@ header {
       background-color: #454343; }
       header .navi_buttons .navi_buttons_white a {
         color: #ea5252; }
+      header .navi_buttons .navi_buttons_white:hover {
+        background-color: #838194; }
+        header .navi_buttons .navi_buttons_white:hover a {
+          color: #fff; }
     header .navi_buttons .navi_buttons_color {
       background-color: #ea5252; }
       header .navi_buttons .navi_buttons_color a {
         color: #fff; }
+      header .navi_buttons .navi_buttons_color:hover {
+        background-color: #838194; }
+        header .navi_buttons .navi_buttons_color:hover a {
+          color: #fff; }
   @media (min-width: 400px) {
     header .navi_buttons {
       margin: 260px auto;
@@ -278,10 +304,10 @@ header {
       margin: 180px auto; } }
   @media (min-width: 1000px) and (min-height: 600px) {
     header .navi_buttons {
-      margin: 140px auto; } }
-  @media (orientation: landscape) and (max-height: 725px) {
+      margin: 90px auto; } }
+  @media (min-width: 1000px) and (min-height: 800px) {
     header .navi_buttons {
-      margin: 150px auto; } }
+      margin: 140px auto; } }
   @media (orientation: portrait) and (min-height: 730px) {
     header .navi_buttons {
       margin: 250px auto; } }
@@ -289,59 +315,58 @@ header {
     header .navi_buttons {
       margin: 150px auto; } }
 
-@media (min-width: 400px) {
-  header {
-    min-height: 100vh;
-    height: 800px;
-    background-image: url(../img/medium.jpg); } }
-@media (min-height: 600px) {
+@media (min-width: 400px), (min-height: 600px) {
   header {
     background-image: url(../img/medium.jpg); } }
-@media (min-width: 670px) {
+@media (min-width: 600px) {
   header {
-    background-image: url(../img/medium1.jpg); } }
-@media (min-width: 670px) {
-  header {
-    background-image: url(../img/str6.jpg); } }
-@media (min-height: 600px) {
-  header {
-    height: 800px; } }
-@media (min-height: 700px) {
-  header {
-    height: 1100px;
-    background-image: url(../img/str12.jpg); } }
+    background-image: url(../img/str13.jpg); } }
 @media (orientation: portrait) and (min-height: 730px) {
   header {
     min-height: 100vh;
     height: 1025px; } }
+@media (min-height: 800px) {
+  header {
+    height: 830px; } }
+@media (min-height: 900px) {
+  header {
+    height: 930px; } }
 @media (min-width: 1000px) {
   header {
-    height: 1025px;
-    background-image: url(../img/str11.jpg); } }
+    background-image: url(../img/str14.jpg); } }
+@media (min-width: 1280px) {
+  header {
+    background-image: url(../img/str15.jpg); } }
+@media (min-width: 1500px) {
+  header {
+    background-image: url(../img/str16.jpg); } }
 @media (min-height: 1000px) {
   header {
     background-image: url(../img/str11.jpg);
-    height: 1270px; } }
+    height: 1100px; } }
 @media (min-height: 1200px) {
   header {
-    height: 1370px; } }
+    height: 1210px; } }
 .about_me {
   height: 950px;
   width: auto;
   background: #e9e9e9; }
   .about_me .navigation {
+    display: none;
     height: 50px;
-    width: auto;
+    width: 100%;
     background: #ea5252; }
     @media (min-width: 900px) {
       .about_me .navigation .sticky {
         float: right; } }
-  @media (min-width: 400px) {
+  @media (min-width: 500px) {
     .about_me .navigation {
+      display: inline-block;
+      text-align: center;
       margin-top: -70px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 1900px) {
     .about_me .navigation {
-      text-align: center; } }
+      margin-top: -50px; } }
   .about_me .name {
     display: inline-block;
     font-family: Raleway, sans-serif;
@@ -394,7 +419,7 @@ header {
   .menu_fixed {
     float: none; } }
 .about-me-heading {
-  padding-top: 60px; }
+  padding-top: 100px; }
   .about-me-heading h3 {
     text-align: center;
     color: #2a2a2a;
@@ -445,61 +470,61 @@ header {
 @media (orientation: portrait) and (min-height: 730px) {
   .img_about_me {
     display: block; } }
-#scills {
+#skills {
   height: 850px;
   width: auto;
   background: #fff; }
-  #scills .about-my-scills {
+  #skills .about-my-skills {
     padding-top: 100px; }
-    #scills .about-my-scills h3 {
+    #skills .about-my-skills h3 {
       text-align: center;
       color: #2a2a2a;
       font-family: Raleway, sans-serif;
       font-size: 40px;
       font-weight: bold; }
-  #scills .scills_cointener {
+  #skills .skills_cointener {
     margin-top: 50px; }
-    #scills .scills_cointener div {
+    #skills .skills_cointener div {
       width: 50%;
       margin: 0 auto; }
-    #scills .scills_cointener p {
+    #skills .skills_cointener p {
       text-align: center;
       color: #2a2a2a;
       font-family: Raleway, sans-serif;
       font-size: 18px;
       font-weight: bold; }
     @media (min-width: 900px) {
-      #scills .scills_cointener p {
+      #skills .skills_cointener p {
         font-size: 22px; } }
-    #scills .scills_cointener .html .color {
+    #skills .skills_cointener .html .color {
       width: 90%;
       background: #ef4566; }
-    #scills .scills_cointener .css .color {
+    #skills .skills_cointener .css .color {
       width: 80%;
       background: #F69a9a; }
-    #scills .scills_cointener .javaScript .color {
+    #skills .skills_cointener .javaScript .color {
       width: 65%;
       background: #F9cdae; }
-    #scills .scills_cointener .jQuery .color {
+    #skills .skills_cointener .jQuery .color {
       width: 50%;
       background: #f16a43; }
-    #scills .scills_cointener .rwd .color {
+    #skills .skills_cointener .rwd .color {
       width: 80%;
       background: #83ae9b; }
-    #scills .scills_cointener .sass .color {
+    #skills .skills_cointener .sass .color {
       width: 65%;
       background: #e8175d; }
-    #scills .scills_cointener .photoshop .color {
+    #skills .skills_cointener .photoshop .color {
       width: 40%;
       background: #c65b7b; }
-    #scills .scills_cointener .indesign .color {
+    #skills .skills_cointener .indesign .color {
       width: 65%;
       background: #f67280; }
-    #scills .scills_cointener .git .color {
+    #skills .skills_cointener .git .color {
       width: 75%;
       background: #f7d969; }
   @media (min-width: 600px) {
-    #scills .scills_cointener {
+    #skills .skills_cointener {
       width: 80%;
       margin: 0 auto;
       display: flex;
@@ -508,14 +533,14 @@ header {
       justify-content: center;
       margin-top: 90px; } }
   @media (min-width: 1300px) {
-    #scills .scills_cointener {
+    #skills .skills_cointener {
       padding: 0 200px; } }
 
 @media (min-height: 1000px) {
-  #scills {
+  #skills {
     height: 990px; } }
 @media (min-height: 1199px) {
-  #scills {
+  #skills {
     height: 1100px; } }
 .portfolio {
   min-height: 100vh;
@@ -556,6 +581,21 @@ header {
   @media (min-width: 1000px) {
     .portfolio .boxs {
       width: 45%; } }
+  @media (min-width: 1200px) {
+    .portfolio .boxs {
+      width: 70%; } }
+  @media (min-width: 1300px) {
+    .portfolio .boxs {
+      width: 60%; } }
+  @media (min-width: 1500px) {
+    .portfolio .boxs {
+      width: 50%; } }
+  @media (min-width: 1600px) {
+    .portfolio .boxs {
+      width: 50%; } }
+  @media (min-width: 1800px) {
+    .portfolio .boxs {
+      width: 40%; } }
   .portfolio .box {
     margin: 0 auto;
     height: 200px;
@@ -567,7 +607,7 @@ header {
     @media (min-width: 1200px) {
       .portfolio .box .img {
         width: 350px;
-        height: 250px;
+        height: 240px;
         padding: 10px; } }
     .portfolio .box .more {
       display: block;
@@ -576,6 +616,7 @@ header {
       font-weight: bold; }
       .portfolio .box .more p {
         height: 30px;
+        cursor: pointer;
         background-color: #ea5252;
         border: none;
         color: #fff;
@@ -584,6 +625,8 @@ header {
         border-radius: 8px;
         display: inline-block;
         font-size: 15px; }
+        .portfolio .box .more p:hover {
+          background-color: #838194; }
     @media (min-width: 1200px) {
       .portfolio .box .more {
         margin-top: -55px; } }
@@ -592,7 +635,10 @@ header {
       width: 50%; } }
   @media (min-width: 1200px) {
     .portfolio .box {
-      height: 270px; } }
+      height: 230px; } }
+  @media (min-width: 1200px) {
+    .portfolio .box {
+      height: 260px; } }
   .portfolio .modal {
     height: 380px;
     width: 70%;
@@ -611,27 +657,32 @@ header {
       width: 10px; }
     .portfolio .modal p {
       font-family: "Roboto Mono";
-      margin: 10px 0; }
+      margin: 8px 0; }
     .portfolio .modal .decor {
       margin-top: -4px; }
+    .portfolio .modal .buttons {
+      text-align: center; }
     .portfolio .modal .guzik {
       margin: 0px auto;
       height: 30px;
       width: 100px;
       background: #ea5252;
-      border-radius: 4px; }
+      border-radius: 4px;
+      display: inline-block;
+      text-align: center; }
       .portfolio .modal .guzik a {
         display: block;
         color: #fff;
         text-decoration: none;
         text-align: center;
         font-family: Raleway, sans-serif;
-        font-size: 18px;
-        padding: 5px 5px 0 5px;
-        margin-bottom: 10px; }
+        font-size: 17px;
+        padding-bottom: 2px; }
+      .portfolio .modal .guzik:hover {
+        background: #838194; }
   @media (min-height: 400px) {
     .portfolio .modal {
-      height: 430px; } }
+      height: 380px; } }
 
 @media (min-width: 500px) {
   .portfolio {
@@ -646,13 +697,14 @@ header {
     height: 1260px; } }
 @media (min-width: 1200px) {
   .add {
-    height: 1600px; } }
+    height: 1530px; } }
 .contacts {
   min-height: 100vh;
   height: 799px;
   width: auto;
-  background-image: url(../img/backround.jpg);
-  background-repeat: no-repeat; }
+  background-image: url(../img/backround800.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden; }
   .contacts .about-contact {
     padding-top: 100px; }
     .contacts .about-contact h3 {
@@ -725,11 +777,14 @@ header {
 
 @media (min-width: 800px) {
   .contacts {
-    height: auto; } }
+    height: auto;
+    background-image: url(../img/backround1200.jpg); } }
+@media (min-width: 1200px) {
+  .contacts {
+    background-image: url(../img/backround1920.jpg); } }
 .footer {
   height: 50px;
   width: auto;
-  margin-top: -50px;
   background: #ea5252;
   text-align: center; }
   .footer p {
@@ -738,9 +793,5 @@ header {
     color: white;
     font-family: Raleway, sans-serif;
     font-weight: bold; }
-
-@media (min-width: 800px) {
-  .footer {
-    margin-top: -130px; } }
 
 /*# sourceMappingURL=style.css.map */
